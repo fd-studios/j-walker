@@ -1,19 +1,18 @@
 # j-walker
 
-## game play
-Objective: cross dangerous roads to restaurents around town
-potential progression: levels have furthur progression, either inland crossing highways, rail yards, and industrial zones, or downtown via the river
-Obsructions:
-cars, busses, trucks, limes, bikes, strollers, trains, boosted boards
-Difficultly gradient: faster vehicles, more traffic, time limit?
+## Game play
+Objective: cross dangerous roads to restaurents around town  
+potential progression: levels have furthur progression, either inland crossing highways, rail yards, and industrial zones, or downtown via the river  
+Obsructions: cars, busses, trucks, limes, bikes, strollers, trains, boosted boards  
+Difficultly gradient: faster vehicles, more traffic, time limit?  
 
 Potential gimmick: juggle multiple employees at once, have them eat and come back, have player worry about meeting times, delays at given restaurent, etc
 
-## graphics
-2D
-top down
-forced downward perspective
-aliased pixel art
+## Graphics
+* 2D
+* top down
+* forced downward perspective
+* aliased pixel art
 
 open question: player size 1x1 for ease of use or 1x2 for more natural looking porportions?
 
@@ -25,12 +24,12 @@ Open question: Move in exact grid units or freely?
 Similar flow of scenes as first game
 
 ## Game scene
-### map
-Hoboken streets
+### Map
+Urban environment with sidewalks, streets, alleys, etc, primarily horizontally oriented
 
-### scoring
-amount of employees successfully crossed
-possibly item pick ups
+### Scoring
+* amount of employees successfully crossed
+* possibly item pick ups
 
-### items
+### Items
 random snacks?
