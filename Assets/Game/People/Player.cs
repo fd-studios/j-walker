@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Camera Camera;
+
     Animator _animator;
 
     // Start is called before the first frame update
@@ -55,5 +57,9 @@ public class Player : MonoBehaviour
         const float speed = .05f;
         
         transform.Translate(x * speed, y * speed, 0);
+
+        var camX = Mathf.Clamp(transform.position.x, -5, 4);
+        var camY = Mathf.Clamp(transform.position.y, 0, 14);
+        Camera.transform.SetPositionAndRotation(new Vector3(camX, camY, Camera.transform.position.z), Camera.transform.rotation);
     }
 }
