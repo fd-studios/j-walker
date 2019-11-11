@@ -6,7 +6,9 @@ potential progression: levels have furthur progression, either inland crossing h
 Obsructions: cars, busses, trucks, limes, bikes, strollers, trains, boosted boards  
 Difficultly gradient: faster vehicles, more traffic, time limit?  
 
-Potential gimmick: juggle multiple employees at once, have them eat and come back, have player worry about meeting times, delays at given restaurent, etc
+### Potential gimmick
+juggle multiple employees at once, have them eat and come back, have player worry about meeting times, delays at given restaurent, etc
+Consider pairings of patrons in restaurant, collision in the streets
 
 ## Graphics
 * 2D

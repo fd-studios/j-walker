@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public Camera Camera;
 
     Animator _animator;
+    Vector3 _startLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,8 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.SetInteger("direction", (int) _lastDir);
         _animator.SetBool("walk", false);
+
+        _startLocation = transform.position;
     }
 
     public enum Direction { None = 0, Up, Down, Left, Right }
@@ -74,5 +77,10 @@ public class Player : MonoBehaviour
             var camY = Mathf.Clamp(transform.position.y, 0, 14);
             Camera.transform.SetPositionAndRotation(new Vector3(camX, camY, Camera.transform.position.z), Camera.transform.rotation);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        transform.position = _startLocation;
     }
 }
